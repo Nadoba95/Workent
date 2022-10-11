@@ -1,0 +1,29 @@
+%button {
+  font-family: $mukta-family;
+  background-color: transparent;
+  text-decoration: none;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  color: $black;
+  padding: 0;
+}
+
+.btn {
+  @extend %button;
+}
+
+.btn-blue {
+  @extend %button;
+  background-color: $blue;
+  color: $white;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 19px;
+  border-radius: 25px;
+  padding: 15px 30px 16px 30px;
+}
+
+.btn-blue:hover {
+  background-color: lighten($blue, $amount: 7);
+}

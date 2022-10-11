@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Workent</title>
+    <link href="./favicon.ico" rel="icon" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Mukta:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <header class="header js-header">
+      <img class="header__logo" src="assets/images/logo.png" alt="logo" />
+      <nav class="header__nav js-header-nav">
+        <ul class="header__list">
+          <li class="header__item">
+            <a class="btn header__link" href="#">The Workent Origin</a>
+          </li>
+          <li class="header__item">
+            <button
+              class="btn header__btn-dropdown js-header-btn-dropdown"
+              type="button"
+            >
+              About
+              <span class="icon-arrow-down header__icon-arrow-down"></span>
+            </button>
+            <div class="header__dropdown-list-wrapper">
+              <ul class="header__dropdown-list">
+                <li class="header__dropdown-item">
+                  <a class="btn header__dropdown-link" href="#">Overview</a>
+                </li>
+                <li class="header__dropdown-item">
+                  <a class="btn header__dropdown-link" href="#">Our story</a>
+                </li>
+                <li class="header__dropdown-item">
+                  <a class="btn header__dropdown-link" href="#">Our team</a>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li class="header__item">
+            <a class="btn header__link" href="#">News</a>
+          </li>
+          <li class="header__item">
+            <a class="btn header__link" href="#"
+              >Careers <span class="icon-link header__icon-link"></span
+            ></a>
+          </li>
+        </ul>
+      </nav>
+      <div class="header__btns-wrapper">
+        <a class="btn-blue header__btn-contact" href="#">Contact us</a>
+        <div class="header__menu-box">
+          <p class="header__menu">Menu</p>
+          <button class="btn header__btn-menu js-header-btn-menu" type="button">
+            <span
+              class="icon-menu header__icon-menu js-header-icon-menu"
+            ></span>
+            <span
+              class="icon-close header__icon-close js-header-icon-close hidden"
+            ></span>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <script src="./js/main.js"></script>
+  </body>
+</html>
