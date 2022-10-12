@@ -11,7 +11,7 @@
     padding: 22px 0;
   }
 
-  @include breakpoint($tablet) {
+  @include breakpoint($mobile) {
     position: relative;
     padding: 26px 0;
   }
@@ -92,6 +92,7 @@
   overflow: hidden;
   margin-bottom: 25px;
   transition: max-height $dropdown-duration ease;
+  z-index: 99;
 
   @include breakpoint($tablet) {
     position: static;
@@ -106,7 +107,6 @@
   background-color: $white;
   border-radius: 10px;
   margin-top: 5px;
-  z-index: 1;
   padding: 25px 144px 30px 20px;
 
   @include breakpoint($tablet) {
@@ -140,9 +140,13 @@
 
 .header__btn-contact {
   padding: 13px 30px 14px 30px;
+  font-size: 16px;
+  line-height: 19px;
 
   @include breakpoint($mobile) {
-    display: none; // absolute
+    position: absolute;
+    left: 20px;
+    top: 500px;
   }
 }
 
@@ -185,7 +189,7 @@
 
 .header__btn-dropdown.active {
   background-color: $blue;
-  color: white;
+  color: $white;
 
   @include breakpoint($tablet) {
     background-color: $white;

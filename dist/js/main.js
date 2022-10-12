@@ -1,9 +1,9 @@
 "use strict";
 
+const header = document.querySelector(".js-header");
+const headerNav = document.querySelector(".js-header-nav");
 const btnHeaderMenu = document.querySelector(".js-header-btn-menu");
 const btnHeaderDropdown = document.querySelector(".js-header-btn-dropdown");
-const headerNav = document.querySelector(".js-header-nav");
-const header = document.querySelector(".js-header");
 
 function toggleMenu() {
   const iconMenu = this.querySelector(".js-header-icon-menu");

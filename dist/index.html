@@ -18,7 +18,9 @@
       <nav class="header__nav js-header-nav">
         <ul class="header__list">
           <li class="header__item">
-            <a class="btn header__link" href="#">The Workent Origin</a>
+            <a class="btn header__link" href="javascript:;"
+              >The Workent Origin</a
+            >
           </li>
           <li class="header__item">
             <button
@@ -31,29 +33,37 @@
             <div class="header__dropdown-list-wrapper">
               <ul class="header__dropdown-list">
                 <li class="header__dropdown-item">
-                  <a class="btn header__dropdown-link" href="#">Overview</a>
+                  <a class="btn header__dropdown-link" href="javascript:;"
+                    >Overview</a
+                  >
                 </li>
                 <li class="header__dropdown-item">
-                  <a class="btn header__dropdown-link" href="#">Our story</a>
+                  <a class="btn header__dropdown-link" href="javascript:;"
+                    >Our story</a
+                  >
                 </li>
                 <li class="header__dropdown-item">
-                  <a class="btn header__dropdown-link" href="#">Our team</a>
+                  <a class="btn header__dropdown-link" href="javascript:;"
+                    >Our team</a
+                  >
                 </li>
               </ul>
             </div>
           </li>
           <li class="header__item">
-            <a class="btn header__link" href="#">News</a>
+            <a class="btn header__link" href="javascript:;">News</a>
           </li>
           <li class="header__item">
-            <a class="btn header__link" href="#"
+            <a class="btn header__link" href="javascript:;"
               >Careers <span class="icon-link header__icon-link"></span
             ></a>
           </li>
         </ul>
       </nav>
       <div class="header__btns-wrapper">
-        <a class="btn-blue header__btn-contact" href="#">Contact us</a>
+        <a class="btn-blue header__btn-contact" href="javascript:;"
+          >Contact us</a
+        >
         <div class="header__menu-box">
           <p class="header__menu">Menu</p>
           <button class="btn header__btn-menu js-header-btn-menu" type="button">
@@ -67,6 +77,96 @@
         </div>
       </div>
     </header>
+
+    <section class="hero">
+      <div
+        class="hero__dots-img"
+        style="background-image: url(assets/images/dots.png)"
+      >
+        <div
+          class="hero__device-shape-img"
+          style="background-image: url(assets/images/device-shape.png)"
+        >
+          <div
+            class="hero__finger-img"
+            style="background-image: url(assets/images/finger.png)"
+          ></div>
+        </div>
+      </div>
+      <div class="hero__card">
+        <h1 class="hero__title">Diagnostics.</h1>
+        <h2 class="hero__subtitle">Unconstrained. Uncompromised.</h2>
+        <button class="btn-blue" type="button">
+          <span class="icon-play-circle"></span>Watch product film
+        </button>
+      </div>
+      <a class="btn hero__link" href="#video">
+        <div class="hero__scroll">
+          <div class="hero__line">|</div>
+        </div>
+      </a>
+    </section>
+
+    <section class="video" id="video">
+      <div class="video__wrapper">
+        <iframe
+          class="video__iframe"
+          src="https://player.vimeo.com/video/740426857?h=e1291f2247&color=ffffff&portrait=0&badge=0"
+          frameborder="0"
+          allow="autoplay; fullscreen; picture-in-picture"
+          allowfullscreen
+        ></iframe>
+      </div>
+    </section>
+
+    <section class="image-text">
+      <img class="image-text__img" src="assets/images/osler.png" alt="osler" />
+      <div class="image-text__card">
+        <h2 class="image-text__title">Capabilities</h2>
+        <div class="image-text-items-box">
+          <div class="image-text__item">
+            <img src="assets/images/lab-menu.png" alt="lab menu" />
+            <div class="image-text__box">
+              <p class="image-text__subtitle">
+                Lab <span class="image-text__blue">menu</span>
+              </p>
+              <p class="image-text__desc">Comprehensive test menu</p>
+            </div>
+          </div>
+          <div class="image-text__item">
+            <img src="assets/images/speedometer.png" alt="speedometer" />
+            <div class="image-text__box">
+              <p class="image-text__subtitle">
+                Lab <span class="image-text__blue">performance</span>
+              </p>
+              <p class="image-text__desc">
+                Quantitative, Multiplexed, Accurate, Highly Sensitive
+              </p>
+            </div>
+          </div>
+          <div class="image-text__item">
+            <img src="assets/images/network.png" alt="network" />
+            <div class="image-text__box">
+              <p class="image-text__subtitle">
+                For
+                <span class="image-text__blue"
+                  >everyone, everywhere, anytime</span
+                >
+              </p>
+              <p class="image-text__desc">
+                Portable, Low-Cost, and Quick, Easy, and Safe to use and manage
+              </p>
+            </div>
+          </div>
+        </div>
+        <p class="image-text__desc image-text__desc--margin">
+          The Osler Origin has been comprehensively tested, proven, and is
+          initiating regulatory activities required for approvals in major
+          geographies
+        </p>
+        <button class="btn-blue" type="button">Find out more</button>
+      </div>
+    </section>
 
     <script src="./js/main.js"></script>
   </body>
