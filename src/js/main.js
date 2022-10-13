@@ -1,10 +1,23 @@
 "use strict";
 import "./swiper/swiper.js";
 
+const heroSection = document.querySelector(".js-hero");
+const heroScroll = document.querySelector(".js-hero-link");
+
 const header = document.querySelector(".js-header");
 const headerNav = document.querySelector(".js-header-nav");
 const btnHeaderMenu = document.querySelector(".js-header-btn-menu");
 const btnHeaderDropdown = document.querySelector(".js-header-btn-dropdown");
+
+heroScroll.addEventListener("click", () => {
+  const sectionCords = heroSection.getBoundingClientRect();
+
+  window.scrollTo({
+    left: sectionCords.left + window.pageXOffset,
+    top: sectionCords.bottom + window.pageYOffset,
+    behavior: "smooth",
+  });
+});
 
 function toggleMenu() {
   const iconMenu = this.querySelector(".js-header-icon-menu");
