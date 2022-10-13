@@ -1,0 +1,112 @@
+.applications {
+  padding: 166px 20px 158px 20px;
+
+  @include breakpoint($tablet) {
+    padding: 100px 20px 95px 20px;
+  }
+
+  @include breakpoint($mobile) {
+    padding: 70px 20px 67px 20px;
+  }
+}
+
+.applications__container {
+  width: fit-content;
+  margin: 0 auto;
+}
+
+.applications__text-container {
+  display: flex;
+  margin-bottom: 35px;
+
+  @include breakpoint($tablet) {
+    flex-direction: column;
+    margin-bottom: 80px;
+  }
+
+  @include breakpoint($mobile) {
+    margin-bottom: 40px;
+  }
+}
+
+.applications__title {
+  width: 50%;
+  font-size: 70px;
+  font-weight: 700;
+  line-height: 84px;
+
+  @include breakpoint($tablet) {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  @include breakpoint($mobile) {
+    font-size: 36px;
+    line-height: 43px;
+  }
+}
+
+.applications__desc-box {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+
+  @include breakpoint($tablet) {
+    width: 100%;
+  }
+
+  @include breakpoint($mobile) {
+    gap: 20px;
+  }
+}
+
+.applications__desc {
+  max-width: 507px;
+  font-size: 36px;
+  font-weight: 500;
+  line-height: 50px;
+
+  @include breakpoint($tablet) {
+    max-width: fit-content;
+  }
+
+  @include breakpoint($mobile) {
+    font-size: 23px;
+    line-height: 32px;
+  }
+}
+
+.applications__small-desc {
+  max-width: 415px;
+  font-size: 23px;
+  font-weight: 400;
+  line-height: 37px;
+
+  @include breakpoint($tablet) {
+    max-width: fit-content;
+  }
+
+  @include breakpoint($mobile) {
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
+
+.applications__gray {
+  color: $silver;
+}
+
+.applications__img {
+  width: 100%;
+  background-position: center;
+  background-size: cover;
+
+  @include breakpoint($tablet) {
+    min-height: 450px;
+  }
+
+  @include breakpoint($mobile) {
+    min-height: 210px;
+  }
+}

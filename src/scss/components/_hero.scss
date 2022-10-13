@@ -119,8 +119,8 @@
 .hero__link {
   position: absolute;
   bottom: 70px;
-  left: calc(50% + 755px);
-  transform: translateX(-50%);
+  right: 60px;
+  z-index: 2;
 
   @include breakpoint($tablet) {
     display: none;

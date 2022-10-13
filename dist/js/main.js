@@ -1,4 +1,5 @@
 "use strict";
+import "./swiper/swiper.js";
 
 const header = document.querySelector(".js-header");
 const headerNav = document.querySelector(".js-header-nav");
