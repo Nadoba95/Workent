@@ -1,15 +1,18 @@
 import Swiper from "https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.esm.browser.min.js";
 
+const btnNext = document.querySelector(".js-btn-slider-right");
+const btnPrev = document.querySelector(".js-btn-slider-left");
+
 const swiper = new Swiper(".swiper", {
-  direction: "vertical",
+  speed: 400,
+  slidesPerView: 4,
   loop: true,
+  spaceBetween: 20,
+  watchSlidesVisibility: true,
+  grabCursor: true,
 
   navigation: {
-    nextEl: ".swiper-button-next",
-    prevEl: ".swiper-button-prev",
-  },
-
-  scrollbar: {
-    el: ".swiper-scrollbar",
+    nextEl: btnNext,
+    prevEl: btnPrev,
   },
 });

@@ -9,7 +9,7 @@ const headerNav = document.querySelector(".js-header-nav");
 const btnHeaderMenu = document.querySelector(".js-header-btn-menu");
 const btnHeaderDropdown = document.querySelector(".js-header-btn-dropdown");
 
-heroScroll.addEventListener("click", () => {
+function scrollToSecondSection() {
   const sectionCords = heroSection.getBoundingClientRect();
 
   window.scrollTo({
@@ -17,7 +17,7 @@ heroScroll.addEventListener("click", () => {
     top: sectionCords.bottom + window.pageYOffset,
     behavior: "smooth",
   });
-});
+}
 
 function toggleMenu() {
   const iconMenu = this.querySelector(".js-header-icon-menu");
@@ -48,5 +48,6 @@ function toggleDropdown() {
   }
 }
 
+heroScroll.addEventListener("click", scrollToSecondSection);
 btnHeaderMenu.addEventListener("click", toggleMenu);
 btnHeaderDropdown.addEventListener("click", toggleDropdown);

@@ -37,3 +37,20 @@
 .btn-blue:hover {
   background-color: lighten($blue, $amount: 7);
 }
+
+.btn-slider {
+  @extend %button;
+  border: 1px solid $slider-border;
+  width: 80px;
+  height: 80px;
+  color: $blue;
+  border-radius: 50%;
+}
+
+.btn-slider:hover {
+  background-color: darken($white, $amount: 3);
+}
+
+.btn-slider:active {
+  background-color: darken($white, $amount: 6);
+}

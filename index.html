@@ -10,6 +10,10 @@
       href="https://fonts.googleapis.com/css2?family=Mukta:wght@400;500;600;700&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper@8/swiper-bundle.min.css"
+    />
     <link rel="stylesheet" href="./css/style.css" />
   </head>
   <body>
@@ -246,18 +250,129 @@
     </section>
 
     <section class="our-team">
-      <div class="swiper">
-        <div class="swiper-wrapper">
-          <!-- Slides -->
-          <!-- <div class="swiper-slide">Slide 1</div>
-          <div class="swiper-slide">Slide 2</div>
-          <div class="swiper-slide">Slide 3</div> -->
+      <div class="our-team__container">
+        <h2 class="our-team__title">Our team</h2>
+        <a class="btn-blue our-team__link" href="javascript:;"
+          >View our whole team</a
+        >
+        <p class="our-team__subtitle">Leadership Team</p>
+
+        <div class="swiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <img
+                class="swiper__img"
+                src="assets/images/Profile Image=Tom Parenteau.png"
+                alt="Tom Parenteau"
+              />
+              <p class="swiper__title">Tom Parenteau</p>
+              <p class="swiper__desc">Tom Parenteau</p>
+            </div>
+            <div class="swiper-slide">
+              <img
+                class="swiper__img"
+                src="assets/images/Profile Image=Sarah Pillmore.png"
+                alt="Sarah Pillmore"
+              />
+              <p class="swiper__title">Sarah Pilimore</p>
+              <p class="swiper__desc">CPO</p>
+            </div>
+            <div class="swiper-slide">
+              <img
+                class="swiper__img"
+                src="assets/images/Profile Image=Sugosh Venkataraman.png"
+                alt="Sugosh Venkataraman"
+              />
+              <p class="swiper__title">Sugosh Venkataraman</p>
+              <p class="swiper__desc">Director of Engineering</p>
+            </div>
+            <div class="swiper-slide">
+              <img
+                class="swiper__img"
+                src="assets/images/Profile Image=Dr David Edington.png"
+                alt="Dr David Edington"
+              />
+              <p class="swiper__title">Dr David Edington</p>
+              <p class="swiper__desc">CTO</p>
+            </div>
+            <div class="swiper-slide">
+              <img
+                class="swiper__img"
+                src="assets/images/Profile Image=Paul Dixon.png"
+                alt="Paul Dixon"
+              />
+              <p class="swiper__title">Paul Dixon</p>
+              <p class="swiper__desc">CTO</p>
+            </div>
+          </div>
         </div>
 
-        <div class="swiper-button-prev"></div>
-        <div class="swiper-button-next"></div>
+        <div class="our-team__buttons-box">
+          <button class="btn-slider js-btn-slider-left" type="button">
+            <span class="icon-arrow-left"></span>
+          </button>
+          <button class="btn-slider js-btn-slider-right" type="button">
+            <span class="icon-arrow-right"></span>
+          </button>
+        </div>
+      </div>
+    </section>
 
-        <div class="swiper-scrollbar"></div>
+    <section class="our-investors">
+      <div class="our-investors__container">
+        <h2 class="our-investors__title">Our Investors</h2>
+        <p class="our-investors__desc">Select Investors include...</p>
+        <div class="our-investors__logos-box">
+          <div class="our-investors__img-wrapper">
+            <img
+              class="our-investors__img"
+              src="assets/images/Braavos.png"
+              alt="braavos"
+            />
+          </div>
+          <div class="our-investors__img-wrapper">
+            <img
+              class="our-investors__img"
+              src="assets/images/IPGL.png"
+              alt="braavos"
+            />
+          </div>
+          <div class="our-investors__img-wrapper">
+            <img
+              class="our-investors__img"
+              src="assets/images/Lansdowne.png"
+              alt="braavos"
+            />
+          </div>
+          <div class="our-investors__img-wrapper">
+            <img
+              class="our-investors__img"
+              src="assets/images/MayoClinic.png"
+              alt="braavos"
+            />
+          </div>
+          <div class="our-investors__img-wrapper">
+            <img
+              class="our-investors__img"
+              src="assets/images/OSI.png"
+              alt="braavos"
+            />
+          </div>
+          <div class="our-investors__img-wrapper">
+            <img
+              class="our-investors__img"
+              src="assets/images/Oford Uni.png"
+              alt="braavos"
+            />
+          </div>
+          <div class="our-investors__img-wrapper">
+            <img
+              class="our-investors__img"
+              src="assets/images/Last Logo.png"
+              alt="braavos"
+            />
+          </div>
+        </div>
       </div>
     </section>
 
