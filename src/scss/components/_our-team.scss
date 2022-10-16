@@ -1,11 +1,17 @@
 .our-team {
   padding: 150px 20px 0 20px;
+
+  @include breakpoint($tablet) {
+    padding: 102px 20px 0 20px;
+  }
 }
 
 .our-team__container {
   position: relative;
   width: clamp(200px, 100%, 1230px);
   margin: 0 auto;
+  display: flex;
+  flex-direction: column;
 }
 
 .our-team__title {
@@ -19,6 +25,10 @@
   position: absolute;
   top: 20px;
   right: 0;
+
+  @include breakpoint($tablet) {
+    top: 27px;
+  }
 }
 
 .our-team__subtitle {
@@ -26,14 +36,24 @@
   font-weight: 500;
   line-height: 39px;
   margin-bottom: 30px;
+
+  @include breakpoint($tablet) {
+    font-size: 26px;
+    line-height: 31px;
+  }
 }
 
 .swiper {
   position: relative;
-  width: 100%;
+  width: 1230px;
   margin-bottom: 35px;
   overflow: visible;
   display: flex;
+
+  @include breakpoint($tablet) {
+    width: 1300px;
+    margin-bottom: 32px;
+  }
 }
 
 .swiper::after {
@@ -60,12 +80,18 @@
   margin-bottom: 20px;
   width: 293px;
   height: 392px;
+
+  @include breakpoint($tablet) {
+    width: 310px;
+    height: 422px;
+  }
 }
 
 .swiper__title {
   font-size: 23px;
   font-weight: 500;
   line-height: 30px;
+  white-space: nowrap;
   margin-bottom: 4px;
 }
 
@@ -73,12 +99,17 @@
   font-size: 18px;
   font-weight: 400;
   line-height: 29px;
+  white-space: nowrap;
 }
 
 .our-team__buttons-box {
   display: flex;
   gap: 20px;
-  float: right;
+  align-self: flex-end;
+
+  @include breakpoint($tablet) {
+    align-self: center;
+  }
 }
 
 .icon-arrow-left,
