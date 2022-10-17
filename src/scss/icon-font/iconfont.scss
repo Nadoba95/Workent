@@ -3,11 +3,11 @@ iconfont Webfont
 */
 @font-face {
 	font-family: 'iconfont';
-	src: url('../fonts/iconfont.eot?1665746572885');
-	src: url('../fonts/iconfont.eot?#iefix-1665746572885') format('embedded-opentype'),
-		url('../fonts/iconfont.woff2?1665746572885') format('woff2'),
-		url('../fonts/iconfont.woff?1665746572885') format('woff'),
-		url('../fonts/iconfont.ttf?1665746572885') format('truetype');
+	src: url('../fonts/iconfont.eot?1666014819695');
+	src: url('../fonts/iconfont.eot?#iefix-1666014819695') format('embedded-opentype'),
+		url('../fonts/iconfont.woff2?1666014819695') format('woff2'),
+		url('../fonts/iconfont.woff?1666014819695') format('woff'),
+		url('../fonts/iconfont.ttf?1666014819695') format('truetype');
 	font-weight: normal;
 	font-style: normal;
 }
@@ -53,10 +53,30 @@ Glyphs list
 	content: '\ea05';
 }
 
-.icon-menu::before {
+.icon-long-arrow-right::before {
 	content: '\ea06';
 }
 
-.icon-play-circle::before {
+.icon-mail::before {
 	content: '\ea07';
+}
+
+.icon-menu::before {
+	content: '\ea08';
+}
+
+.icon-phone::before {
+	content: '\ea09';
+}
+
+.icon-play-circle::before {
+	content: '\ea0a';
+}
+
+.icon-printer::before {
+	content: '\ea0b';
+}
+
+.icon-wifi::before {
+	content: '\ea0c';
 }

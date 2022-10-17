@@ -4,6 +4,10 @@
   @include breakpoint($tablet) {
     padding: 102px 20px 0 20px;
   }
+
+  @include breakpoint($mobile) {
+    padding: 70px 20px 0 21px;
+  }
 }
 
 .our-team__container {
@@ -19,6 +23,12 @@
   font-weight: 700;
   line-height: 84px;
   margin-bottom: 40px;
+
+  @include breakpoint($mobile) {
+    font-size: 36px;
+    line-height: 43px;
+    margin-bottom: 30px;
+  }
 }
 
 .our-team__link {
@@ -28,6 +38,13 @@
 
   @include breakpoint($tablet) {
     top: 27px;
+  }
+
+  @include breakpoint($mobile) {
+    top: auto;
+    right: auto;
+    left: 0;
+    bottom: 0;
   }
 }
 
@@ -40,6 +57,12 @@
   @include breakpoint($tablet) {
     font-size: 26px;
     line-height: 31px;
+  }
+
+  @include breakpoint($mobile) {
+    font-size: 17px;
+    line-height: 21px;
+    margin-bottom: 20px;
   }
 }
 
@@ -54,24 +77,37 @@
     width: 1300px;
     margin-bottom: 32px;
   }
-}
 
-.swiper::after {
-  content: "";
-  border-right: 2000px solid $white;
-  opacity: 0.8;
-  z-index: 1;
-}
+  @include breakpoint($mobile) {
+    width: 742px;
+    margin-bottom: 19px;
+  }
 
-.swiper::before {
-  content: "";
-  position: absolute;
-  left: -2000px;
-  top: 0;
-  border-left: 2000px solid $white;
-  height: 475px;
-  opacity: 0.8;
-  z-index: 2;
+  &::after {
+    content: "";
+    border-right: 2000px solid $white;
+    opacity: 0.8;
+    z-index: 1;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    left: -2000px;
+    top: 0;
+    border-left: 2000px solid $white;
+    height: 475px;
+    opacity: 0.8;
+    z-index: 2;
+
+    @include breakpoint($tablet) {
+      height: 505px;
+    }
+
+    @include breakpoint($mobile) {
+      height: 287px;
+    }
+  }
 }
 
 .swiper__img {
@@ -85,6 +121,13 @@
     width: 310px;
     height: 422px;
   }
+
+  @include breakpoint($mobile) {
+    width: 180px;
+    height: 230px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+  }
 }
 
 .swiper__title {
@@ -93,6 +136,12 @@
   line-height: 30px;
   white-space: nowrap;
   margin-bottom: 4px;
+
+  @include breakpoint($mobile) {
+    font-size: 19px;
+    line-height: 23px;
+    margin-bottom: 2px;
+  }
 }
 
 .swiper__desc {
@@ -100,6 +149,11 @@
   font-weight: 400;
   line-height: 29px;
   white-space: nowrap;
+
+  @include breakpoint($mobile) {
+    font-size: 14px;
+    line-height: 22px;
+  }
 }
 
 .our-team__buttons-box {
@@ -110,9 +164,19 @@
   @include breakpoint($tablet) {
     align-self: center;
   }
+
+  @include breakpoint($mobile) {
+    align-self: flex-start;
+    gap: 10px;
+    margin-bottom: 60px;
+  }
 }
 
 .icon-arrow-left,
 .icon-arrow-right {
   font-size: 25px;
+
+  @include breakpoint($mobile) {
+    font-size: 18px;
+  }
 }

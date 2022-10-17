@@ -1,0 +1,113 @@
+.girl-shape {
+  display: flex;
+  justify-content: center;
+  gap: 9.8%;
+  background-color: $pale-gray;
+  padding-top: 108px;
+  overflow: hidden;
+
+  @include breakpoint($tablet) {
+    padding: 62px 20px 0 20px;
+    flex-direction: column;
+    gap: 100px;
+  }
+
+  @include breakpoint($mobile) {
+    padding: 41px 20px 0 20px;
+    gap: 88px;
+  }
+}
+
+.girl-shape__box {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding-top: 54px;
+
+  @include breakpoint($tablet) {
+    padding-top: 0;
+  }
+}
+
+.girl-shape__careers {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 21px;
+  margin-bottom: 10px;
+
+  @include breakpoint($tablet) {
+    font-size: 18px;
+  }
+}
+
+.girl-shape__title {
+  font-size: 70px;
+  font-weight: 700;
+  line-height: 84px;
+  margin-bottom: 40px;
+
+  @include breakpoint($mobile) {
+    font-size: 36px;
+    line-height: 43px;
+    margin-bottom: 20px;
+  }
+}
+
+.girl-shape__blue {
+  color: $blue;
+}
+
+.girl-shape__img-hexa-shape {
+  width: 654px;
+  height: 452px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  position: relative;
+
+  @include breakpoint($tablet) {
+    align-self: center;
+  }
+
+  @include breakpoint($mobile) {
+    width: 288px;
+    height: 199px;
+    right: 6px;
+  }
+}
+
+.girl-shape__img-dots {
+  position: absolute;
+  top: 13px;
+  left: 87px;
+
+  @include breakpoint($tablet) {
+    top: 44px;
+    left: 14px;
+  }
+
+  @include breakpoint($mobile) {
+    width: 102px;
+    height: 104px;
+    top: 6px;
+    left: -27px;
+  }
+}
+
+.girl-shape__img-girl {
+  width: 300px;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(calc(-50% - 28px));
+
+  @include breakpoint($tablet) {
+    width: 275px;
+    transform: translateX(calc(-50% + 13px));
+  }
+
+  @include breakpoint($mobile) {
+    width: 133px;
+    transform: translateX(calc(-50% + 7px));
+  }
+}

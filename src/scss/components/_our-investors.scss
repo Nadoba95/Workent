@@ -1,10 +1,26 @@
 .our-investors {
   padding: 37px 20px 0 20px;
+
+  @include breakpoint($tablet) {
+    padding: 19px 36px 0 36px;
+  }
+
+  @include breakpoint($mobile) {
+    padding: 45px 21px 0 21px;
+  }
 }
 
 .our-investors__container {
   width: clamp(200px, 100%, 1230px);
   margin: 0 auto;
+
+  @include breakpoint($tablet) {
+    width: 696px;
+  }
+
+  @include breakpoint($mobile) {
+    width: 335px;
+  }
 }
 
 .our-investors__title {
@@ -12,6 +28,11 @@
   font-weight: 700;
   line-height: 39px;
   margin-bottom: 10px;
+
+  @include breakpoint($mobile) {
+    font-size: 24px;
+    line-height: 31px;
+  }
 }
 
 .our-investors__desc {
@@ -20,12 +41,51 @@
   line-height: 37px;
   color: $silver;
   margin-bottom: 40px;
+
+  @include breakpoint($mobile) {
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
+
+.our-investors__logos-container {
+  display: flex;
+  gap: 62px;
+
+  @include breakpoint($tablet) {
+    flex-direction: column;
+    gap: 34px;
+  }
+
+  @include breakpoint($mobile) {
+    gap: 22px;
+  }
 }
 
 .our-investors__logos-box {
   display: flex;
   align-items: center;
-  gap: 62.5px;
+  gap: 62px;
+}
+
+.our-investors__logos-box:nth-child(1) {
+  @include breakpoint($tablet) {
+    gap: 100px;
+  }
+
+  @include breakpoint($mobile) {
+    gap: 25px;
+  }
+}
+
+.our-investors__logos-box:nth-child(2) {
+  @include breakpoint($tablet) {
+    gap: 111px;
+  }
+
+  @include breakpoint($mobile) {
+    gap: 44px;
+  }
 }
 
 .our-investors__img {

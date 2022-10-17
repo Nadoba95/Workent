@@ -8,7 +8,7 @@ const swiper = new Swiper(".swiper", {
   slidesPerView: 4,
   loop: true,
   spaceBetween: 20,
-  watchSlidesVisibility: true,
+  watchSlidesProgress: true,
   grabCursor: true,
 
   navigation: {
