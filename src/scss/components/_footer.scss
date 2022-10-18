@@ -1,6 +1,14 @@
 .footer {
   background-color: $blue-black;
   padding: 83px 20px 53px 20px;
+
+  @include breakpoint($tablet) {
+    padding: 50px 20px 44px 20px;
+  }
+
+  @include breakpoint($mobile) {
+    padding: 42px 20px 47px 20px;
+  }
 }
 
 .footer__container {
@@ -9,14 +17,47 @@
   display: flex;
   padding-bottom: 85px;
   position: relative;
+
+  @include breakpoint($tablet) {
+    flex-direction: column;
+    gap: 82px;
+    padding-bottom: 202px;
+  }
+
+  @include breakpoint($tablet) {
+    gap: 34px;
+    padding-bottom: 147px;
+  }
 }
 
 .footer__box {
   margin-right: 194px;
+
+  @include breakpoint($tablet) {
+    display: flex;
+    margin-right: 0;
+    gap: 184px;
+  }
+
+  @include breakpoint($mobile) {
+    flex-direction: column;
+    gap: 34px;
+  }
 }
 
 .footer__logo {
+  width: 180px;
+  height: 32px;
   margin-bottom: 20px;
+
+  @include breakpoint($tablet) {
+    margin-bottom: 0;
+  }
+
+  @include breakpoint($mobile) {
+    width: 150px;
+    height: 27px;
+  }
 }
 
 .footer__desc-white {
@@ -35,6 +76,15 @@
   opacity: 0.4;
   max-width: 421px;
   margin-bottom: 30px;
+
+  @include breakpoint($mobile) {
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
+
+.footer__all-links-box {
+  display: flex;
 }
 
 .footer__white-links-box {
@@ -43,6 +93,15 @@
   gap: 23px;
   margin-right: 169px;
   padding-top: 1px;
+
+  @include breakpoint($tablet) {
+    padding-top: 0;
+    margin-right: 226px;
+  }
+
+  @include breakpoint($tablet) {
+    margin-right: 30px;
+  }
 }
 
 .footer__white-link {
@@ -50,6 +109,7 @@
   font-weight: 700;
   line-height: 16px;
   color: $white;
+  white-space: nowrap;
 }
 
 .footer__gray-links-box {
@@ -57,6 +117,10 @@
   flex-direction: column;
   gap: 20px;
   padding-top: 3px;
+
+  @include breakpoint($tablet) {
+    padding-top: 0;
+  }
 }
 
 .footer__gray-link {
@@ -65,15 +129,25 @@
   line-height: 14px;
   color: $white;
   opacity: 0.4;
+  white-space: nowrap;
 }
 
 .footer__copyright-box {
   width: 100%;
   display: flex;
   align-items: center;
-  gap: 764px;
+  justify-content: center;
   position: absolute;
   bottom: 0;
+
+  @include breakpoint($tablet) {
+    flex-direction: column-reverse;
+    gap: 29px;
+  }
+
+  @include breakpoint($mobile) {
+    gap: 24px;
+  }
 }
 
 .footer__copyright {
@@ -88,6 +162,11 @@
   display: flex;
   align-items: center;
   gap: 10px;
+  padding-right: 118px;
+
+  @include breakpoint($tablet) {
+    padding-right: 0;
+  }
 }
 
 .footer__accessories-link {
