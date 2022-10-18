@@ -48,6 +48,8 @@ function toggleDropdown() {
   }
 }
 
-heroScroll.addEventListener("click", scrollToSecondSection);
+if (heroScroll) {
+  heroScroll.addEventListener("click", scrollToSecondSection);
+}
 btnHeaderMenu.addEventListener("click", toggleMenu);
 btnHeaderDropdown.addEventListener("click", toggleDropdown);
