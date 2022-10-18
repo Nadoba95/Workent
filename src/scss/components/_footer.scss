@@ -105,11 +105,33 @@
 }
 
 .footer__white-link {
+  width: fit-content;
   font-size: 16px;
   font-weight: 700;
   line-height: 16px;
   color: $white;
   white-space: nowrap;
+  position: relative;
+  transition: $buttons-duration;
+
+  &::after {
+    content: "";
+    position: absolute;
+    background-color: $blue;
+    height: 2px;
+    width: 0;
+    left: 0;
+    bottom: -4px;
+    transition: $buttons-duration;
+  }
+
+  &:hover {
+    color: $blue;
+  }
+
+  &:hover::after {
+    width: 100%;
+  }
 }
 
 .footer__gray-links-box {
@@ -183,7 +205,6 @@
 }
 
 .footer__accessories-link:hover,
-.footer__gray-link:hover,
-.footer__white-link:hover {
+.footer__gray-link:hover {
   opacity: 0.7;
 }
