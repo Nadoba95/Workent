@@ -99,7 +99,7 @@
     margin-right: 226px;
   }
 
-  @include breakpoint($tablet) {
+  @include breakpoint($mobile) {
     margin-right: 30px;
   }
 }
@@ -136,12 +136,13 @@
   width: 100%;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
   position: absolute;
   bottom: 0;
 
   @include breakpoint($tablet) {
     flex-direction: column-reverse;
+    justify-content: center;
     gap: 29px;
   }
 
