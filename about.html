@@ -58,7 +58,9 @@
         </ul>
       </nav>
       <div class="header__btns-wrapper">
-        <a class="btn-blue header__btn-contact" href="javascript:;"
+        <a
+          class="btn-blue header__btn-contact js-btn-contact"
+          href="javascript:;"
           >Contact us</a
         >
         <div class="header__menu-box">
@@ -85,7 +87,7 @@
       </div>
     </section>
 
-    <section class="text-image text-image--reverse text-image--padding">
+    <section class="text-image text-image--padding">
       <div class="text-image__card">
         <h2 class="text-image__title">Our Purpose</h2>
         <p class="text-image__desc">
@@ -98,14 +100,7 @@
       </div>
     </section>
 
-    <section class="text-image">
-      <div class="text-image__img-wrapper">
-        <img
-          class="text-image__img"
-          src="assets/images/display.png"
-          alt="display"
-        />
-      </div>
+    <section class="text-image text-image--reverse">
       <div class="text-image__card">
         <h2 class="text-image__title">Our Mission</h2>
         <p class="text-image__desc">
@@ -114,26 +109,40 @@
           anywhere, at any time.
         </p>
       </div>
+      <div class="text-image__img-wrapper">
+        <img
+          class="text-image__img"
+          src="assets/images/display.png"
+          alt="display"
+        />
+      </div>
     </section>
 
     <section class="quotes">
       <div class="quotes__container">
-        <span class="icon-quotes"></span>
-        <p class="quotes__text">
-          Vitae platea sit a a eu venenatis suspendisse scelerisque quisque
-          interdum et dictumst a amet vestibulum lobortis sed senectus
-          adipiscing a sociis ullamcorper a at.
-        </p>
-        <p class="quotes__title">
-          <span class="quotes__author">Name,</span> Title
-        </p>
+        <div class="quotes__box">
+          <span class="icon-quotes"></span>
+          <p class="quotes__text">
+            Vitae platea sit a a eu venenatis suspendisse scelerisque quisque
+            interdum et dictumst a amet vestibulum lobortis sed senectus
+            adipiscing a sociis ullamcorper a at.
+          </p>
+          <p class="quotes__title">
+            <span class="quotes__author">Name,</span> Title
+          </p>
+        </div>
+        <img
+          class="quotes__img"
+          src="assets/images/transparent-shape.png"
+          alt="transparent shape"
+        />
       </div>
     </section>
 
-    <section class="text-image text-image--reverse">
-      <div class="text-image__card">
+    <section class="text-image">
+      <div class="text-image__card text-image__card--padding">
         <h2 class="text-image__title">Our Story</h2>
-        <p class="text-image__desc text-image--marging">
+        <p class="text-image__desc text-image__desc--marging">
           Iaculis amet urna, volutpat proin pharetra laoreet. Feugiat quam fames
           vitae venenatis semper semper sapien mauris dignissim. Turpis ut in
           feugiat sit commodo quam.
@@ -149,25 +158,25 @@
       </div>
     </section>
 
-    <section class="text-image">
-      <div class="text-image__img-wrapper">
-        <img class="text-image__img" src="assets/images/guy.png" alt="guy" />
-      </div>
-      <div class="text-image__card">
+    <section class="text-image text-image--reverse">
+      <div class="text-image__card text-image__card--padding">
         <h2 class="text-image__title">Board of Directors</h2>
-        <p class="text-image__desc text-image--marging">
+        <p class="text-image__desc text-image__desc--marging">
           Iaculis amet urna, volutpat proin pharetra laoreet. Feugiat quam fames
           vitae venenatis semper semper sapien mauris dignissim. Turpis ut in
           feugiat sit commodo quam.
         </p>
         <button class="btn-blue" type="button">View more</button>
       </div>
+      <div class="text-image__img-wrapper">
+        <img class="text-image__img" src="assets/images/guy.png" alt="guy" />
+      </div>
     </section>
 
-    <section class="text-image text-image--reverse">
-      <div class="text-image__card">
+    <section class="text-image">
+      <div class="text-image__card text-image__card--padding">
         <h2 class="text-image__title">Leadership Team</h2>
-        <p class="text-image__desc text-image--marging">
+        <p class="text-image__desc text-image__desc--marging">
           Iaculis amet urna, volutpat proin pharetra laoreet. Feugiat quam fames
           vitae venenatis semper semper sapien mauris dignissim. Turpis ut in
           feugiat sit commodo quam.
@@ -180,6 +189,160 @@
           src="assets/images/woman.png"
           alt="woman"
         />
+      </div>
+    </section>
+
+    <section class="stats">
+      <div class="stats__container">
+        <div class="stats__item">
+          <p class="stats__number">120%</p>
+          <p class="stats__title">Vestibulum parturient.</p>
+        </div>
+        <div class="stats__item">
+          <p class="stats__number">25K</p>
+          <p class="stats__title">Eu pretium.</p>
+        </div>
+        <div class="stats__item">
+          <p class="stats__number">+300</p>
+          <p class="stats__title">Adipiscing viverra facilisis.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="accordion">
+      <div class="accordion__container">
+        <button
+          class="btn accordion__head js-accordion-button active"
+          type="button"
+        >
+          <p class="accordion__head-title">
+            Amet estibulum lobortis sed senectus
+          </p>
+          <span class="icon-minus"></span>
+          <span class="icon-plus hidden"></span>
+        </button>
+        <div class="accordion__body">
+          <div class="accordion__desc-box">
+            <p class="accordion__desc">
+              Egestas a mi vestibulum ullamcorper facilisi eget nam phasellus
+              torquent gravida vestibulum ultrices elementum viverra lobortis
+              ultricies parturient a
+              <a class="accordion__blue" href="javascript:;"
+                >vestibulum facilisi dictumst</a
+              >
+              mi dis scelerisque risus mattis. Nam eleifend torquent penatibus
+              vitae morbi ad condimentum a ullamcorper aliquam donec bibendum
+              placerat suspendisse consectetur parturient at. Ut elementum vitae
+              auctor neque scelerisque nullam porta urna penatibus tempor montes
+              nullam pharetra tempus morbi non ullamcorper tempor libero a a
+              erat. Lacus ullamcorper vulputate ante nisi in ad dictumst
+              fermentum quam a odio nec scelerisque a adipiscing suspendisse
+              donec ultricies condimentum
+              <a class="accordion__blue" href="javascript:;">blandit tempor</a>
+              in eros vestibulum vestibulum. Blandit a a interdum euismod
+              vestibulum at consectetur ac vulputate ullamcorper scelerisque mi
+              hendrerit a est scelerisque vestibulum condimentum.
+            </p>
+            <p class="accordion__desc">
+              Eros adipiscing vestibulum parturient cum nibh justo vehicula
+              sodales a nostra condimentum adipiscing a in vulputate suspendisse
+              parturient ac a adipiscing scelerisque suspendisse cum enim sem. A
+              eget parturient posuere taciti adipiscing sed a vestibulum augue
+              suspendisse ac dui primis suscipit ullamcorper ullamcorper nunc
+              sit augue adipiscing facilisis pretium senectus condimentum
+              bibendum.
+            </p>
+          </div>
+        </div>
+        <button class="btn accordion__head js-accordion-button" type="button">
+          <p class="accordion__head-title">
+            Libero risus accumsan commodo scelerisque
+          </p>
+          <span class="icon-minus hidden"></span>
+          <span class="icon-plus"></span>
+        </button>
+        <div class="accordion__body">
+          <div class="accordion__desc-box">
+            <p class="accordion__desc">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Voluptatibus esse commodi iure. Voluptates odit enim id quae?
+              Error maiores accusantium explicabo dolorum beatae facere porro
+              alias eos eaque cupiditate ab illum natus, facilis nemo nostrum
+              saepe magnam nesciunt illo commodi animi minima tenetur odio rerum
+              sit! Ipsam inventore perspiciatis libero porro quasi, asperiores
+              quibusdam obcaecati, ut ipsum repellendus eligendi magni!
+            </p>
+            <p class="accordion__desc">
+              Eros adipiscing vestibulum parturient cum nibh justo vehicula
+              sodales a nostra condimentum adipiscing a in vulputate suspendisse
+              parturient ac a adipiscing scelerisque suspendisse cum enim sem.
+            </p>
+          </div>
+        </div>
+        <button class="btn accordion__head js-accordion-button" type="button">
+          <p class="accordion__head-title">
+            Condimentum phasellus cras diam consectetur
+          </p>
+          <span class="icon-minus hidden"></span>
+          <span class="icon-plus"></span>
+        </button>
+        <div class="accordion__body">
+          <div class="accordion__desc-box">
+            <p class="accordion__desc">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam
+              velit laborum autem optio maiores soluta, tempora iusto quam ad
+              aspernatur ipsa facere voluptas! Facilis voluptatum omnis ducimus
+              provident labore, eum similique rerum ea delectus recusandae,
+              dignissimos, reprehenderit accusantium sapiente quod? Inventore
+              veniam saepe dicta exercitationem.
+            </p>
+            <p class="accordion__desc">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum
+              dolorem consequuntur perferendis quo nobis? Dolores aliquam
+              quibusdam aperiam voluptate officia.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="specs">
+      <div class="specs__container">
+        <h2 class="specs__title">Device Specs</h2>
+        <div class="specs__table">
+          <div class="specs__item">
+            <p class="specs__name">Dimensions</p>
+            <p class="specs__desc">128mm(W) x 287mm(H) x 212mm(L)</p>
+          </div>
+          <div class="specs__item specs__item--grey">
+            <p class="specs__name">Weight</p>
+            <p class="specs__desc">9.83 pounds (4.46 kg)</p>
+          </div>
+          <div class="specs__item">
+            <p class="specs__name">LCD Screen</p>
+            <p class="specs__desc">8”</p>
+          </div>
+          <div class="specs__item specs__item--grey">
+            <p class="specs__name">Screen resolution</p>
+            <p class="specs__desc">1080x1920</p>
+          </div>
+          <div class="specs__item">
+            <p class="specs__name">Battery</p>
+            <p class="specs__desc">Lithium Ion (4000mAh)</p>
+          </div>
+          <div class="specs__item specs__item--grey">
+            <p class="specs__name">Battery running time</p>
+            <p class="specs__desc">6 hours</p>
+          </div>
+          <div class="specs__item">
+            <p class="specs__name">Technology</p>
+            <p class="specs__desc">Android Pie v11.621</p>
+          </div>
+          <div class="specs__item specs__item--grey">
+            <p class="specs__name">Origin-Chip™</p>
+            <p class="specs__desc">v1.0 Build 567</p>
+          </div>
+        </div>
       </div>
     </section>
 

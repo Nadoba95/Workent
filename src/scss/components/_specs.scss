@@ -1,0 +1,70 @@
+.specs {
+  padding: 103px 20px 50px 20px;
+
+  @include breakpoint($tablet) {
+    padding: 63px 20px 50px 20px;
+  }
+
+  @include breakpoint($mobile) {
+    padding: 51px 20px 35px 20px;
+  }
+}
+
+.specs__container {
+  width: clamp(200px, 100%, 1230px);
+  margin: 0 auto;
+}
+
+.specs__title {
+  font-size: 70px;
+  font-weight: 700;
+  line-height: 84px;
+  margin-bottom: 50px;
+
+  @include breakpoint($mobile) {
+    font-size: 36px;
+    line-height: 43px;
+  }
+}
+
+.specs__table {
+  border-top: 1px solid $blue-black;
+}
+
+.specs__item {
+  width: 100%;
+  display: flex;
+  padding: 25px 0;
+}
+
+.specs__item--grey {
+  background-color: $pale-gray;
+}
+
+.specs__name {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 29px;
+  width: 310px;
+  padding-left: 20px;
+
+  @include breakpoint($mobile) {
+    width: 50%;
+    max-width: 157px;
+    padding-left: 0;
+  }
+}
+
+.specs__desc {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 29px;
+  padding-left: 20px;
+
+  @include breakpoint($mobile) {
+    width: 50%;
+    padding-left: 0;
+    position: relative;
+    left: 10px;
+  }
+}

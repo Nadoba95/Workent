@@ -1,0 +1,98 @@
+.stats {
+  padding: 150px 20px 100px 20px;
+
+  @include breakpoint($tablet) {
+    padding: 90px 20px 70px 20px;
+  }
+
+  @include breakpoint($mobile) {
+    padding: 27px 20px 45px 20px;
+  }
+}
+
+.stats__container {
+  width: clamp(200px, 100%, 1230px);
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+}
+
+.stats__item {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+
+  @include breakpoint($mobile) {
+    gap: 0;
+    max-width: 100px;
+  }
+}
+
+.stats__item:nth-child(1) {
+  right: 242px;
+
+  @include breakpoint($tablet) {
+    right: 149px;
+  }
+
+  @include breakpoint($mobile) {
+    right: 38px;
+  }
+}
+
+.stats__item:nth-child(2) {
+  right: 13px;
+
+  @include breakpoint($tablet) {
+    right: 52px;
+  }
+
+  @include breakpoint($mobile) {
+    right: 9px;
+  }
+}
+
+.stats__item:nth-child(3) {
+  left: 224px;
+
+  @include breakpoint($tablet) {
+    left: 101px;
+  }
+
+  @include breakpoint($mobile) {
+    left: 37px;
+  }
+}
+
+.stats__number {
+  font-size: 90px;
+  font-weight: 700;
+  line-height: 90px;
+
+  @include breakpoint($tablet) {
+    font-size: 60px;
+    line-height: 60px;
+  }
+
+  @include breakpoint($mobile) {
+    font-size: 37px;
+    line-height: 37px;
+  }
+}
+
+.stats__title {
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 23px;
+
+  @include breakpoint($tablet) {
+    font-size: 16px;
+    line-height: 29px;
+  }
+
+  @include breakpoint($mobile) {
+    font-size: 12px;
+    line-height: 19px;
+  }
+}

@@ -1,0 +1,124 @@
+.accordion {
+  padding: 98px 20px 100px 20px;
+
+  @include breakpoint($tablet) {
+    padding: 67px 20px 60px 20px;
+  }
+
+  @include breakpoint($mobile) {
+    padding: 42px 20px 31px 20px;
+  }
+}
+
+.accordion__container {
+  width: clamp(250px, 100%, 1230px);
+  margin: 0 auto;
+  border-bottom: 2px solid $acc-border;
+}
+
+.accordion__head {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 31px 0;
+  border-top: 2px solid $acc-border;
+
+  @include breakpoint($mobile) {
+    padding: 21px 0 21px 0;
+  }
+}
+
+.accordion__head:nth-child(1) {
+  border-top: 2px solid $blue;
+}
+
+.accordion__head:hover {
+  background-color: darken($white, $amount: 2);
+}
+
+.accordion__head-title {
+  max-width: 85%;
+  font-size: 30px;
+  font-weight: 500;
+  line-height: 39px;
+  text-align: left;
+
+  @include breakpoint($mobile) {
+    font-size: 24px;
+    line-height: 31px;
+  }
+}
+
+.accordion__body {
+  max-height: 0px;
+  padding-right: 42px;
+  overflow: hidden;
+  transition: max-height $dropdown-duration ease-out;
+
+  @include breakpoint($tablet) {
+    padding-right: 0;
+  }
+}
+
+.accordion__desc-box {
+  margin-bottom: 60px;
+
+  @include breakpoint($tablet) {
+    margin-bottom: 54px;
+  }
+
+  @include breakpoint($mobile) {
+    margin-bottom: 20px;
+  }
+}
+
+.accordion__desc {
+  font-size: 23px;
+  font-weight: 400;
+  line-height: 37px;
+
+  @include breakpoint($tablet) {
+    font-size: 18px;
+    line-height: 29px;
+  }
+
+  @include breakpoint($mobile) {
+    font-size: 14px;
+    line-height: 22px;
+  }
+}
+
+.accordion__desc:nth-child(1) {
+  padding-top: 15px;
+  margin-bottom: 33px;
+
+  @include breakpoint($mobile) {
+    margin-bottom: 22px;
+    padding-top: 0;
+  }
+}
+
+.accordion__blue {
+  color: $blue;
+  text-decoration: none;
+}
+
+.accordion__blue:hover {
+  color: lighten($blue, $amount: 8);
+}
+
+.icon-minus,
+.icon-plus {
+  position: relative;
+  right: 24px;
+  color: $blue;
+}
+
+.icon-minus {
+  font-size: 5px;
+}
+
+.icon-plus {
+  font-size: 22px;
+}

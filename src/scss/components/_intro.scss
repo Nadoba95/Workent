@@ -1,12 +1,12 @@
 .intro {
-  padding: 197px 20px 0 20px;
+  padding: 197px 20px 50px 20px;
 
   @include breakpoint($tablet) {
-    padding: 98px 20px 0 20px;
+    padding: 98px 20px 40px 20px;
   }
 
   @include breakpoint($mobile) {
-    padding: 42px 20px 0 20px;
+    padding: 42px 20px 20px 20px;
   }
 }
 

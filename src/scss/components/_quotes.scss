@@ -1,21 +1,53 @@
 .quotes {
-  padding: 200px 20px 100px 20px;
+  padding: 150px 20px;
+
+  @include breakpoint($tablet) {
+    padding: 90px 20px;
+  }
+
+  @include breakpoint($mobile) {
+    padding: 59px 20px;
+  }
 }
 
 .quotes__container {
+  position: relative;
   width: clamp(200px, 100%, 1230px);
   margin: 0 auto;
+}
+
+.quotes__box {
   padding-left: 50px;
   border-left: 3px solid $blue;
   display: flex;
   flex-direction: column;
   gap: 20px;
+  position: relative;
+  z-index: 1;
+
+  @include breakpoint($mobile) {
+    padding-left: 25px;
+    margin: 0 auto;
+    max-width: fit-content;
+  }
 }
 
 .quotes__text {
   font-size: 48px;
   font-weight: 500;
   line-height: 67px;
+
+  @include breakpoint($tablet) {
+    font-size: 36px;
+    line-height: 50px;
+    max-width: 642px;
+  }
+
+  @include breakpoint($mobile) {
+    font-size: 23px;
+    line-height: 32px;
+    max-width: 306px;
+  }
 }
 
 .quotes__author {
@@ -31,4 +63,23 @@
 .icon-quotes {
   color: $blue;
   font-size: 30px;
+
+  @include breakpoint($mobile) {
+    font-size: 24px;
+  }
+}
+
+.quotes__img {
+  position: absolute;
+  left: -55px;
+  top: -125px;
+
+  @include breakpoint($tablet) {
+    left: -327px;
+    top: -148px;
+  }
+
+  @include breakpoint($mobile) {
+    display: none;
+  }
 }

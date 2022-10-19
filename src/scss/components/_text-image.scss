@@ -1,5 +1,5 @@
 .text-image {
-  padding: 100px 20px 0 20px;
+  padding: 50px 20px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -7,18 +7,20 @@
   background-color: $white;
 
   @include breakpoint($tablet) {
-    padding: 80px 20px 0 20px;
+    padding: 40px 20px;
     gap: 62px;
   }
 
   @include breakpoint($mobile) {
-    flex-direction: column;
-    padding: 60px 20px 0 20px;
+    flex-direction: column-reverse;
+    padding: 30px 20px;
     gap: 20px;
   }
 }
 
 .text-image--reverse {
+  flex-direction: row-reverse;
+
   @include breakpoint($mobile) {
     flex-direction: column-reverse;
   }
@@ -26,7 +28,7 @@
 
 .text-image--padding {
   @include breakpoint($mobile) {
-    padding-top: 40px;
+    padding-top: 20px;
   }
 }
 
@@ -43,6 +45,14 @@
   @include breakpoint($mobile) {
     width: auto;
     max-width: 335px;
+  }
+}
+
+.text-image__card--padding {
+  padding-bottom: 10px;
+
+  @include breakpoint($mobile) {
+    padding-bottom: 4px;
   }
 }
 
@@ -80,7 +90,7 @@
   }
 }
 
-.text-image--marging {
+.text-image__desc--marging {
   margin-bottom: 30px;
 
   @include breakpoint($tablet) {
@@ -88,7 +98,7 @@
   }
 
   @include breakpoint($mobile) {
-    margin-bottom: 10px;
+    margin-bottom: 11px;
   }
 }
 
@@ -97,6 +107,7 @@
   width: 600px;
   height: 480px;
   border-radius: 20px;
+  z-index: 1;
 
   @include breakpoint($tablet) {
     width: 50%;

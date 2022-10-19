@@ -1,5 +1,6 @@
 "use strict";
 import "./swiper/swiper.js";
+import "./accordion/accordion.js";
 
 const heroSection = document.querySelector(".js-hero");
 const heroScroll = document.querySelector(".js-hero-link");
@@ -8,6 +9,9 @@ const header = document.querySelector(".js-header");
 const headerNav = document.querySelector(".js-header-nav");
 const btnHeaderMenu = document.querySelector(".js-header-btn-menu");
 const btnHeaderDropdown = document.querySelector(".js-header-btn-dropdown");
+const btnContact = document.querySelector(".js-btn-contact");
+
+const mobile = innerWidth < 768;
 
 function scrollToSecondSection() {
   const sectionCords = heroSection.getBoundingClientRect();
@@ -28,9 +32,17 @@ function toggleMenu() {
   this.classList.toggle("active");
 
   if (this.classList.contains("active")) {
+    if (mobile) {
+      btnContact.style.display = "block";
+    }
+
     header.classList.add("active");
     headerNav.style.display = "block";
   } else {
+    if (mobile) {
+      btnContact.style.display = "none";
+    }
+
     header.classList.remove("active");
     headerNav.style.display = "none";
   }
