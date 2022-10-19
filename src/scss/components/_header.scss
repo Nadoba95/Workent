@@ -14,7 +14,6 @@
   @include breakpoint($mobile) {
     position: relative;
     padding: 26px 0;
-    z-index: -1;
   }
 }
 
@@ -148,7 +147,6 @@
     position: absolute;
     left: 20px;
     top: 500px;
-    z-index: -1;
   }
 }
 
