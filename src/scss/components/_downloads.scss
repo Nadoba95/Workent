@@ -1,0 +1,92 @@
+.downloads {
+  padding: 97px 20px 199px 20px;
+
+  @include breakpoint($tablet) {
+    padding: 47px 20px 99px 20px;
+  }
+
+  @include breakpoint($mobile) {
+    padding: 32px 20px 68px 20px;
+  }
+}
+
+.downloads__container {
+  width: clamp(200px, 100%, 1230px);
+  margin: 0 auto;
+  padding: 60px;
+  border: 2px solid $blue;
+  border-radius: 20px;
+
+  @include breakpoint($mobile) {
+    padding: 20px;
+  }
+}
+
+.downloads__title {
+  font-size: 30px;
+  font-weight: 500;
+  line-height: 39px;
+  color: $blue;
+  margin-bottom: 20px;
+
+  @include breakpoint($mobile) {
+    font-size: 26px;
+    line-height: 34px;
+    margin-bottom: 5px;
+  }
+}
+
+.downloads__box {
+  display: flex;
+  flex-direction: column;
+}
+
+.downloads__item {
+  display: flex;
+  gap: 10px;
+  padding: 20px 0;
+  border-bottom: 1px solid $blue-black-opacity;
+
+  @include breakpoint($mobile) {
+    padding: 15px 0;
+  }
+}
+
+.downloads__link {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 29px;
+  display: flex;
+  gap: 10px;
+
+  &:hover {
+    text-decoration: underline;
+  }
+
+  &:hover .icon-download {
+    color: lighten($blue, $amount: 8);
+  }
+
+  @include breakpoint($mobile) {
+    font-size: 16px;
+    line-height: 26px;
+    width: 68%;
+  }
+}
+
+.downloads__desc {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 29px;
+  color: $silver;
+
+  @include breakpoint($mobile) {
+    font-size: 16px;
+    line-height: 29px;
+  }
+}
+
+.icon-download {
+  color: $blue;
+  font-size: 17px;
+}
