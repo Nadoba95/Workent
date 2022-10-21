@@ -1,10 +1,71 @@
 .find-out {
-  background-color: $lighten-black;
-  background-blend-mode: lighten;
-  mix-blend-mode: normal;
+  background-color: $bg-black;
+  position: relative;
+  padding: 134px 0 165px 0;
+
+  @include breakpoint($tablet) {
+    padding: 60px 0 0 20px;
+  }
+
+  @include breakpoint($mobile) {
+    padding: 40px 0 0 20px;
+  }
+}
+
+.find-out__card {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  position: relative;
+  left: 50%;
+  transform: translateX(-35%);
+  z-index: 1;
+
+  @include breakpoint($tablet) {
+    left: 0;
+    transform: translateX(0);
+  }
+}
+
+.find-out__title {
+  font-size: 70px;
+  font-weight: 700;
+  line-height: 70px;
+  margin-bottom: 40px;
+  color: $white;
+
+  @include breakpoint($mobile) {
+    font-size: 36px;
+    line-height: 43px;
+    margin-bottom: 20px;
+  }
+}
+
+.find-out__desc {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 21px;
+  margin-bottom: 10px;
+  color: $silver;
+}
+
+.find-out__img-wrapper {
+  height: 100%;
+  position: absolute;
+  top: 0;
+  right: 0;
+
+  @include breakpoint($tablet) {
+    position: static;
+  }
 }
 
 .find-out__img {
-  background-blend-mode: lighten;
-  height: 500px;
+  width: 1406px;
+  background-size: cover;
+  background-position: center;
+
+  @include breakpoint($tablet) {
+    width: 100%;
+  }
 }

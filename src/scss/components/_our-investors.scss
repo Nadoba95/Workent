@@ -10,6 +10,18 @@
   }
 }
 
+.our-investors--padding {
+  padding: 37px 20px 150px 20px;
+
+  @include breakpoint($tablet) {
+    padding: 19px 36px 92px 36px;
+  }
+
+  @include breakpoint($mobile) {
+    padding: 45px 21px 66px 36px;
+  }
+}
+
 .our-investors__container {
   width: clamp(200px, 100%, 1230px);
   margin: 0 auto;
