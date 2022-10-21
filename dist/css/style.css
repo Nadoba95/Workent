@@ -2482,6 +2482,10 @@ body {
   font-weight: 700;
   line-height: 60px;
   margin-bottom: 40px; }
+  @media (max-width: 767px) {
+    .people__title {
+      font-size: 26px;
+      line-height: 31px; } }
 
 .people__members {
   display: grid;
