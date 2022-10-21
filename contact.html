@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Mukta:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <header class="header active js-header">
+      <img class="header__logo" src="assets/images/logo.png" alt="logo" />
+      <nav class="header__nav js-header-nav">
+        <ul class="header__list">
+          <li class="header__item">
+            <a class="btn header__link" href="index.html">The Workent Origin</a>
+          </li>
+          <li class="header__item">
+            <button
+              class="btn header__btn-dropdown js-header-btn-dropdown"
+              type="button"
+            >
+              About
+              <span class="icon-arrow-down header__icon-arrow-down"></span>
+            </button>
+            <div class="header__dropdown-list-wrapper">
+              <ul class="header__dropdown-list">
+                <li class="header__dropdown-item">
+                  <a class="btn header__dropdown-link" href="about.html"
+                    >Overview</a
+                  >
+                </li>
+                <li class="header__dropdown-item">
+                  <a class="btn header__dropdown-link" href="javascript:;"
+                    >Our story</a
+                  >
+                </li>
+                <li class="header__dropdown-item">
+                  <a class="btn header__dropdown-link" href="javascript:;"
+                    >Our team</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li class="header__item">
+            <a class="btn header__link" href="javascript:;">News</a>
+          </li>
+          <li class="header__item">
+            <a class="btn header__link" href="javascript:;"
+              >Careers <span class="icon-link header__icon-link"></span
+            ></a>
+          </li>
+        </ul>
+      </nav>
+      <div class="header__btns-wrapper">
+        <a
+          class="btn-blue header__btn-contact js-btn-contact"
+          href="javascript:;"
+          >Contact us</a
+        >
+        <div class="header__menu-box">
+          <p class="header__menu">Menu</p>
+          <button class="btn header__btn-menu js-header-btn-menu" type="button">
+            <span
+              class="icon-menu header__icon-menu js-header-icon-menu"
+            ></span>
+            <span
+              class="icon-close header__icon-close js-header-icon-close hidden"
+            ></span>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <section class="rte">
+      <div>
+        <h1>This is Heading 1</h1>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut pariatur
+          dolores amet totam quo? Laudantium neque nihil quasi culpa recusandae
+          sed numquam, aperiam ea corporis ratione earum ut mollitia ducimus!
+        </p>
+        <h2>This is heading 2</h2>
+        <h3>This is heading 3</h3>
+        <p>
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Magnam
+          deleniti rerum tempora amet animi dolorem atque similique, minus est
+          assumenda.<br />
+          <span
+            >Lorem ipsum dolor sit amet consectetur adipisicing elit. Non at
+            magni error, officiis ut suscipit maiores quia voluptate itaque quo
+            magnam veniam, beatae tenetur. Tempore eveniet nam consequatur iusto
+            quae consequuntur unde tempora dolores, quos, quas vel incidunt
+            soluta quis?</span
+          >
+        </p>
+        <h4>This is heading 4</h4>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet
+          voluptas optio assumenda exercitationem, nobis praesentium, aut
+          repellat magni eos accusantium sequi excepturi nisi recusandae
+          temporibus? Neque accusamus inventore ipsa eligendi!
+        </p>
+
+        <h5>This is heading 5</h5>
+      </div>
+    </section>
+
+    <section class="contact">
+      <div class="contact__container">
+        <div class="contact__box">
+          <h2 class="contact__title">Contact details</h2>
+          <p class="contact__subtitle">Tel</p>
+          <p class="contact__number">01865 655474</p>
+          <p class="contact__subtitle">Email</p>
+          <div class="mail-box">
+            <p class="mail-box__title">
+              General:
+              <span class="mail-box__mail">contact@oslerdiagnostics.com</span>
+            </p>
+          </div>
+          <div class="mail-box">
+            <p class="mail-box__title">
+              Media:
+              <span class="mail-box__mail">media@oslerdiagnostics.com</span>
+            </p>
+          </div>
+          <div class="mail-box">
+            <p class="mail-box__title">
+              Business Development:
+              <span class="mail-box__mail mail-box__mail--padding"
+                >bd@oslerdiagnostics.com</span
+              >
+            </p>
+          </div>
+          <p class="contact__subtitle">Address</p>
+          <p class="contact__address">
+            Osler Diagnostics Limited<br />King Charles House<br />Oxford<br />OX1
+            1JD<br />United Kingdom
+          </p>
+        </div>
+        <div class="contact__box">
+          <h2 class="contact__title">Send us a message</h2>
+
+          <form class="form js-form">
+            <div class="form__item">
+              <label class="form__label" for="name">Name*</label>
+              <input
+                class="form__input js-form-input-name"
+                name="name"
+                id="name"
+                type="text"
+              />
+            </div>
+            <div class="form__item">
+              <label class="form__label" for="email">Email Address*</label>
+              <input
+                class="form__input js-form-input-email"
+                name="email"
+                id="email"
+                type="text"
+              />
+            </div>
+            <div class="form__item">
+              <label class="form__label" for="organisation"
+                >Organisation*</label
+              >
+              <input
+                class="form__input js-form-input-organisation"
+                name="organisation"
+                id="organisation"
+                type="text"
+              />
+            </div>
+            <div class="form__item form__item--row">
+              <label class="form__label">Reason for contacting us</label>
+              <span class="icon-arrow-down form__icon-arrow-down"></span>
+            </div>
+            <div class="form__item form__item--width">
+              <label class="form__label" for="message">Your message*</label>
+              <textarea
+                class="form__textarea js-form-textarea-message"
+                name="message"
+                id="message"
+              ></textarea>
+            </div>
+            <div class="form__checkbox-box">
+              <input
+                class="form__checkbox"
+                type="checkbox"
+                name="checkbox"
+                id="checkbox"
+                checked
+              />
+              <label class="form__checkbox-label" for="checkbox"
+                >Nascetur proin in lacinia pulvinar commodo sem scelerisque
+                ullamcorper habitant fermentum ut interdum malesuada parturient
+                blandit interdum vel integer ullamcorper sit a
+                tincidunt.*</label
+              >
+            </div>
+            <button class="btn-blue" type="submit">Submit</button>
+          </form>
+        </div>
+        <div class="contact__success-msg-box js-contact-success-msg-box hidden">
+          <div class="contact__success-btn">
+            <span class="icon-corect"></span>
+          </div>
+          <p class="contact__success-msg">
+            Thank you. Your message has been submitted.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="footer">
+      <div class="footer__container">
+        <div class="footer__box">
+          <img
+            class="footer__logo"
+            src="assets/images/footer-logo.png"
+            alt="logo"
+          />
+          <div class="footer__desc-box">
+            <p class="footer__desc-white">Stay informed</p>
+            <p class="footer__desc">
+              Sign up to receive quarterly updates from Osler Diagnostics.
+            </p>
+            <button class="btn-blue" type="button">Sign up now</button>
+          </div>
+        </div>
+        <div class="footer__all-links-box">
+          <ul class="footer__white-links-box">
+            <li>
+              <a href="javascript:;" class="btn footer__white-link"
+                >The Workent Origin</a
+              >
+            </li>
+            <li>
+              <a href="javascript:;" class="btn footer__white-link">About</a>
+            </li>
+            <li>
+              <a href="javascript:;" class="btn footer__white-link">News</a>
+            </li>
+            <li>
+              <a href="javascript:;" class="btn footer__white-link">Careers</a>
+            </li>
+            <li>
+              <a href="javascript:;" class="btn footer__white-link"
+                >Contact Us</a
+              >
+            </li>
+          </ul>
+          <ul class="footer__gray-links-box">
+            <li>
+              <a href="javascript:;" class="btn footer__gray-link"
+                >Accessibility</a
+              >
+            </li>
+            <li>
+              <a href="javascript:;" class="btn footer__gray-link"
+                >Privacy & Cookie policy</a
+              >
+            </li>
+            <li>
+              <a href="javascript:;" class="btn footer__gray-link"
+                >Cookie Settings</a
+              >
+            </li>
+            <li>
+              <a href="javascript:;" class="btn footer__gray-link"
+                >Terms & Conditions</a
+              >
+            </li>
+            <li>
+              <a href="javascript:;" class="btn footer__gray-link">Sitemap</a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer__copyright-box">
+          <p class="footer__copyright">Copyright &copy; 2021 Workent.</p>
+          <ul class="footer__accessories">
+            <li>
+              <a href="javascript:;" class="btn footer__accessories-link"
+                ><span class="icon-phone"></span>
+              </a>
+            </li>
+            <li>
+              <a href="javascript:;" class="btn footer__accessories-link"
+                ><span class="icon-mail"></span>
+              </a>
+            </li>
+            <li>
+              <a href="javascript:;" class="btn footer__accessories-link"
+                ><span class="icon-wifi"></span>
+              </a>
+            </li>
+            <li>
+              <a href="javascript:;" class="btn footer__accessories-link"
+                ><span class="icon-printer"></span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <script type="module" src="./js/main.js"></script>
+  </body>
+</html>

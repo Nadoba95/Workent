@@ -3,6 +3,7 @@ import "./header/header.js";
 import "./swiper/swiper.js";
 import "./accordion/accordion.js";
 import "./people/people.js";
+import "./contact/contact.js";
 
 const heroSection = document.querySelector(".js-hero");
 const heroScroll = document.querySelector(".js-hero-link");
